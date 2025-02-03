@@ -10,7 +10,7 @@ import {
 export default function SelectTimer(){
     return (
         <div>
-            <h3 className="my-2 text-lg">Timer limit</h3>
+            <h3 className="my-2 text-lg font-extrabold">Timer limit</h3>
             <Select>
             <SelectTrigger>
                 <SelectValue placeholder="5 seconds" />

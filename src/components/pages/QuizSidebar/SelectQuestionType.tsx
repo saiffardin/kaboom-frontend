@@ -10,7 +10,7 @@ import {
 export default function SelectQuestionType(){
     return (
         <div>
-            <h3 className="mb-2  text-lg">Question type</h3>
+            <h3 className="mb-2 text-lg font-extrabold">Question type</h3>
             <Select>
             <SelectTrigger>
                 <SelectValue placeholder="Quiz" />

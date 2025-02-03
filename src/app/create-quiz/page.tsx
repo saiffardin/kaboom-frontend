@@ -1,15 +1,13 @@
-import AllQuiz from "../components/AllQuiz";
-import QuestionInput from "../components/QuestionInput";
-import SideBar from "../components/SideBar";
 
+import AllQuiz from "@/components/pages/AllQuiz";
+import QuestionInput from "@/components/pages/QuestionInput";
 
+export default function CreateQuiz() {
 
-export default function CreateQuiz(){
-    return(
-        <div className="flex flex-col md:flex-row overflow-hidden">
-            <AllQuiz/>
-            <QuestionInput/>
-            <SideBar/>
-        </div>
-    )
-};
+  return (
+    <div className="flex flex-col lg:flex-row min-w-full h-screen justify-between">
+      <AllQuiz />
+      <QuestionInput />
+    </div>
+  );
+}
