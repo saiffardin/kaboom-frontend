@@ -2,6 +2,7 @@ import React from "react";
 import bgImg from '@/assets/images/360_F_255814073_eVeqoLhJQ31uBZ3fcgaaRcYgEtYDkYkF.jpg'
 import { Input } from "@/components/ui/input"
 import Menubar from "./Menubar";
+import OptionInput from "./OptionInput";
 export default function QuestionInput(){
     return(
         <div className={`order-1 lg:order-2 w-full flex flex-col justify-between bg-cover bg-center min-h-[75vh] lg:min-h-screen px-4 py-4 pb-10`}
@@ -12,10 +13,10 @@ export default function QuestionInput(){
            <Menubar/>
             </div>
             <div className="grid grid-cols-2 gap-3">
-                <Input className="bg-white lg:min-h-20 lg:text-3xl lg:placeholder:text-3xl text-center" type="text" placeholder="Start typing your question"/>  
-                <Input className="bg-white lg:min-h-20 lg:text-3xl lg:placeholder:text-3xl text-center" type="text" placeholder="Start typing your question"/>
-                <Input className="bg-white lg:min-h-20 lg:text-3xl lg:placeholder:text-3xl text-center" type="text" placeholder="Start typing your question"/>
-                <Input className="bg-white lg:min-h-20 lg:text-3xl lg:placeholder:text-3xl text-center" type="text" placeholder="Start typing your question"/>    
+                <OptionInput placeholder="Start typing your question" type="triangle"/>
+                <OptionInput placeholder="Start typing your question" type="45DegRectangle"/>
+                <OptionInput placeholder="Start typing your question" type="rectangle"/>
+                <OptionInput placeholder="Start typing your question" type="circle"/>
             </div>
         </div>
     )
