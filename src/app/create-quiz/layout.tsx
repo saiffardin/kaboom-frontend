@@ -8,7 +8,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main className="w-full">
         {children}
       </main>
+      <div className="hidden lg:block">
       <QuizSidebar/>
+      </div>
     </SidebarProvider>
   )
 }
