@@ -10,7 +10,7 @@ import SelectTimer from "./SelectTimer"
     return (
       <Sidebar side="right">
 
-      <SidebarTrigger className="absolute -left-10 top-1/2 -translate-y-[50%]"/>
+      <SidebarTrigger className="absolute -left-[50px] top-1/2 -translate-y-[50%]"/>
        <SidebarContent className="p-4">
         <SelectQuestionType/>
         <SelectTimer/>
