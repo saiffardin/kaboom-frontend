@@ -1,4 +1,4 @@
-
+"use client"
 import AllQuestions from "@/components/pages/AllQuestions";
 import QuestionInput from "@/components/pages/QuestionInput";
 

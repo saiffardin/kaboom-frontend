@@ -5,12 +5,16 @@ import {
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
+import { MessageCircleQuestion } from "lucide-react"
   
 
 export default function SelectQuestionType(){
     return (
         <div>
-            <h3 className="mb-2 text-lg font-extrabold">Question type</h3>
+            <div className="flex items-center gap-1 mb-2">
+                <MessageCircleQuestion size={18} strokeWidth={1.4} absoluteStrokeWidth />
+                <h3 className="text-lg font-extrabold">Question type</h3>
+            </div>
             <Select>
             <SelectTrigger>
                 <SelectValue placeholder="Quiz" />

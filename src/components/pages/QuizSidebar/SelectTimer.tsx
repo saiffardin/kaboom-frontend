@@ -5,12 +5,16 @@ import {
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
+import { Timer } from "lucide-react"
   
 
 export default function SelectTimer(){
     return (
         <div>
-            <h3 className="my-2 text-lg font-extrabold">Timer limit</h3>
+            <div className="flex items-center gap-1 mb-2">
+            <Timer size={18} strokeWidth={1.4} absoluteStrokeWidth />
+               <h3 className="text-lg font-extrabold">Timer limit</h3>
+            </div>
             <Select>
             <SelectTrigger>
                 <SelectValue placeholder="5 seconds" />

@@ -1,24 +1,28 @@
+import { Copy, Trash2 } from 'lucide-react'
 import React from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
-import { Button } from '../ui/button'
 
 function Question() {
   return (
-    <Card className='w-full max-h-[23vh] lg:max-h-[30vh] lg:min-h-[30vh] py-1 lg:py-3'>
-        <CardHeader className='text-center p-1 lg:p-3'>
-            <CardTitle>what is Next</CardTitle>
-        </CardHeader>
-        <CardContent className='flex flex-wrap py-2 px-6 gap-2 lg:gap-4 justify-between items-center overflow-hidden'>
-            <p className='max-w-[40%] min-w-[40%] max-h-[20px] min-h-[40%] overflow-hidden'>option fdsjfnsdja</p>
-            <p className='max-w-[40%] min-w-[40%] max-h-[20px] min-h-[40%] overflow-hidden'>option djdbfdjsibfa</p>
-            <p className='max-w-[40%] min-w-[40%] max-h-[20px] min-h-[40%] overflow-hidden'>option asduuuuuuuuuuuuui</p>
-            <p className='max-w-[40%] min-w-[40%] max-h-[20px] min-h-[40%] overflow-hidden'>option jsdooooooooooooa</p>
-            <div className='min-w-full flex items-center justify-center gap-4'>
-                <Button variant="default" >Edit</Button>
-                <Button variant="destructive">Delete</Button>
+    <div className='w-full max-h-[23vh] lg:max-h-[140px] lg:min-h-[140px] py-1 flex gap-1 lg:py-3'>
+        <div className='text-gray-700 flex flex-col gap-2 items-center justify-end '>
+        <Copy size={16}/>
+        <Trash2 size={16}/>
+        </div>
+        <div className='w-[150px] bg-gray-200 h-full rounded-lg cursor-pointer border-4 border-gray-200 hover:border-gray-300 '>
+          <div className='flex flex-col gap-2 items-center relative'>
+            <h3>title</h3>
+              <div className='absolute top-[50%] -translate-y-[50%] left-2 border-2 border-gray-300 h-6 w-6  flex items-center justify-center rounded-[50%] text-xs'>20</div>
+              <div className='bg-yellow-100 w-[60px] h-10'></div>
+          
+            <div className='flex flex-wrap items-center justify-center mt-1 gap-1'>
+              <div className='w-[65px] h-2 border border-black '></div>
+              <div className='w-[65px] h-2 border border-black '></div>
+              <div className='w-[65px] h-2 border border-black '></div>
+              <div className='w-[65px] h-2 border border-black '></div>
             </div>
-        </CardContent>
-    </Card>
+          </div>
+        </div>
+    </div>
   )
 }
 
